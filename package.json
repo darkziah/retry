@@ -2,7 +2,9 @@
   "name": "@dark/retry",
   "version": "0.0.1",
   "description": "Async retry library",
-  "main": "index.js",
+  "types": "dist/index.d.ts",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
   "scripts": {
     "build": "tsup lib/index.ts --format cjs,esm --dts",
     "test": "vitest"
@@ -12,12 +14,12 @@
   "license": "ISC",
   "dependencies": {
     "tsup": "^6.7.0",
-    "typescript": "5",
+    "typescript": "^5.0.4",
     "vite": "^4.3.9",
     "vitest": "^0.31.1"
   },
   "devDependencies": {
     "@changesets/cli": "^2.26.1",
-    "@types/node": "18"
+    "@types/node": "^18.16.16"
   }
 }
